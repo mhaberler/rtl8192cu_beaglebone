@@ -262,7 +262,7 @@ endif
 ifeq ($(CONFIG_PLATFORM_BEAGLEBONE), y)
 EXTRA_CFLAGS += -DCONFIG_LITTLE_ENDIAN
 ARCH=arm
-CROSS_COMPILE := arm-linux-gnueabi-
+CROSS_COMPILE := 
 KVER  := $(shell uname -r)
 KSRC ?= /lib/modules/$(KVER)/build
 MODDESTDIR := /lib/modules/$(KVER)/kernel/drivers/net/wireless/
